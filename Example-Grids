@@ -1,0 +1,37 @@
+All of the scenarios below contain moves that are acceptable:
+
+    0   1   2   3
+  -----------------
+0 | M |   |   | C |
+  -------------   -
+1 |   |   |   |   |
+  -------------   -
+2 |   |   |   |   |
+  -------------   -
+3 |   |   |   | F |     
+  -----------------
+The maze above is acceptable, even though there is no way for the mouse to safely reach its food.
+
+    0   1   2    3
+  -----------------
+0 | M |   |   | C |
+  -----------------
+1 |               |
+  -----   -----   -
+2 |   |           |
+  -------------   -
+3 |   |   |   | F |     
+  -----------------
+The maze above is acceptable, even though there is no way for the mouse to reach its food, since it would have to pass through a region with a loop.
+
+    0   1   2   3
+  -----------------
+0 | M |   |   | C |
+  -----------------
+1 |   |   |   |   |
+  -----------------
+2 |   |   |       |
+  ---------   -   -
+3 |   |   |     F |     
+  -----------------
+Similarly, the maze above is acceptable, even though there is no way for the mouse to reach its food, since the food is located in a region with a loop.
