@@ -29,3 +29,24 @@ Some additional rules:
 
   3. We will accept moves that do not allow the cat to reach the mouse and do not introduce a loop for the mouse to get stuck in, even if the move makes it impossible for the
      mouse to ultimately reach its food.
+     
+Input Format:\
+The input begins with a line containing two space-separated integers, n and w. n specifies the length and width of the maze, and w specifies how many wall removals the Monte Carlo system will propose.
+
+Then come w lines, each representing a proposed wall to remove, in the following format: r c DIR
+
+This proposal represents a proposal to remove a wall from the room at row r and column c. DIR will be chosen from the set {N,E,W,S}, indicating which wall should be removed. N,E,W, and S correspond to the north, east, west, or south wall (respectively). North corresponds to the top of the maze, East to the right of the maze, and so on.
+
+Constraints:\
+2 ≤ n ≤ 10^2
+0 ≤ r, c ≤ n-1
+
+The Monte-Carlo system will never propose that an outer wall should be removed. For example, it would not propose:\
+0 0 N
+
+The Monte-Carlo system will never propose that the same wall should be removed twice. It would not, for example, ask to remove the east wall of room (0,0) twice. Similarly, it would not ask to remove the east wall of room (1,1), and then ask to remove the west wall of room (1,2), since this is the same wall.
+
+
+
+
+
