@@ -37,6 +37,9 @@ Then come w lines, each representing a proposed wall to remove, in the following
 
 This proposal represents a proposal to remove a wall from the room at row r and column c. DIR will be chosen from the set {N,E,W,S}, indicating which wall should be removed. N,E,W, and S correspond to the north, east, west, or south wall (respectively). North corresponds to the top of the maze, East to the right of the maze, and so on.
 
+Output Format:\
+The output will contain w lines, containing the w responses to the Monte Carlo system's proposals. Each line will contain the appropriate symbol chosen from the set: {X, K, C, D}.
+
 Constraints:\
 2 ≤ n ≤ 10^2
 0 ≤ r, c ≤ n-1
