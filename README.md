@@ -44,6 +44,18 @@ Constraints:\
 2 ≤ n ≤ 10^2
 0 ≤ r, c ≤ n-1
 
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+file size               (blocks, -f) unlimited
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 61440
+pipe size            (512 bytes, -p) 1
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 2784
+virtual memory          (kbytes, -v) unlimited
+
 The Monte-Carlo system will never propose that an outer wall should be removed. For example, it would not propose:\
 0 0 N
 
